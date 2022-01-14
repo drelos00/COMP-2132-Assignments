@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- author: Dennis Relos	-->
+	<head>
+		<title>Dennis Relos | Assignment 00</title>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <header>
+            <div id="header_style">
+                <h1>Assignment 00</h1>
+            </div>
+        </header>
+
+        <div id="wrapper">
+            <main>
+                <h1 id="my_name">Dennis Relos</h1>
+
+                <section>
+                    <article>
+                        <h2>About me</h2>
+
+                        <div>
+                            <p>I am 25 years old, born on August 18, 1996. I have two two sisters and I am the middle child.</p>
+
+                            <p>I was 13 years old when my family moved to Canada from the Philippines. I am fluent in Tagalog, and 
+                                English is my second language.</p>
+
+                            <p>Amongst my favorite singers are:
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="https://www.youtube.com/watch?v=5QwBNbSPfXY" target="_blank">
+                                                <div class="album_cover">
+                                                    <img src="images/dedicated_album_cover.jpg" alt="Carly Rae Jepsen - Dedicated Album Cover">
+                                                    <p id="text_overlay1">Carly Rae Jepsen</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <a href="https://www.youtube.com/watch?v=d9IxdwEFk1c" target="_blank">
+                                                <div class="album_cover">
+                                                    <img src="images/palette_album_cover.jpg" alt="IU - Palette Album Cover">
+                                                    <p id="text_overlay2">IU</p>
+                                                </div>
+
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+                            <p>I love cars, yo-yos, aquariums, legos, building plastic model kits and mechanical keyboards.</p>
+
+                            <div id="lightbox">
+                                <div class="gallery_photo" data-src="images/iris_keyboard.jpg">
+                                    <img src="images/iris_keyboard_thumbnail.jpg" alt="Custom Mechanical Keyboard">
+                                </div>
+
+                                <div class="gallery_photo" data-src="images/volkswagen_cabriolet.jpg">
+                                    <img src="images/volkswagen_cabriolet_thumbnail.jpg" alt="Vokswagen Cabriolet"/>
+                                </div>
+        
+                                <div class="gallery_photo" data-src="images/gundam_model.jpg">
+                                    <img src="images/gundam_model_thumbnail.jpg" alt="Gundam Plastic Model" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h2>Reason for taking COMP 2132</h2>
+
+                        <div>
+                            <p>I am currently a part-time student at BCIT working towards a CST diploma. However, I am
+                                planning on doing the program full-time instead.</p>
+                                
+                            <p>COMP 2132 is one of the last few required courses I need to take
+                                in order to qualify for direct entry into the full-time program.</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h2>Other Computing Languages I Know</h2>
+
+                        <div>
+                            <article class="sub_article">
+                                <h3>HTML and CSS</h3>
+
+                                <p>I took COMP 1850 with you last semester! Hello again!</p>
+                            </article>
+
+                            <article class="sub_article">
+                                <h3>Python and Java</h3>
+                                <p>I very recently completed COMP 1516 and COMP 2501 and have some familiarity with Python and Java.</p>
+                            </article>
+    
+                            <article class="sub_article">
+                                <h3>SQL</h3>
+                                <p>I also took COMP 1630 last semester and have a very basic understanding of the SQL language.</p>
+                            </article>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h2 id="javascript_message">Hi</h2>
+    
+                        <div>
+                            <p>JavaScript getElementById</p>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+		
+        <footer>
+            <div>
+                <div>
+                    <h2>Dennis Relos</h2>
+                    <p>drelos@my.bcit.ca</p>
+                </div>
+    
+                <div>
+                    <h2>COMP 2132</h2>
+                    <p>Assignment 00</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="scripts/basic_script.js"></script>
+
+        <!-- lightgallery plugins -->
+        <script src="scripts/lightgallery.min.js"></script>
+        <script src="scripts/lg-thumbnail.min.js"></script>
+        <script src="scripts/lg-fullscreen.min.js"></script>
+        <script src="scripts/lg-zoom.min.js"></script>
+        <script>
+            lightGallery(document.getElementById('lightbox'), {
+            selector: '.gallery_photo'
+        });
+        </script>
+
+	</body>
+</html>
+
+

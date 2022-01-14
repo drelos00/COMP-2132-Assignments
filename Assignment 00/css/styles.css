@@ -1,0 +1,200 @@
+/* author: Dennis Relos */
+
+@import url("normalize.css");
+@import url("lightgallery.css");
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    height: 100%
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #3d4141
+}
+
+header{
+    background-color:black;
+}
+
+main{
+    margin: auto;
+    max-width: 90%;
+
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li div{
+    overflow: hidden;
+}
+
+li img:hover{
+    opacity: 0.5;
+    transition: ease-in-out .3s;
+}
+
+article div{
+    margin: 0 25px 0 25px;
+}
+
+
+footer{
+    padding: 0px 25px;
+    color: white;
+    background-image: url(../images/spotify_gradient.png);
+}
+
+footer div div{
+    text-align: center;
+}
+
+footer h2{
+    font-size: 1.2em;
+}
+
+footer p{
+    font-size: .8em;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+
+/*
+---------------------------------------------
+.class 
+---------------------------------------------
+*/
+
+.sub_article p{
+    margin: 0 0 25px 25px;
+
+}
+
+.gallery_photo{
+    margin: 0 auto 25px auto;
+    overflow: hidden;
+}
+
+.gallery_photo img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+}
+
+.album_cover p{
+    font-weight: bold;
+}
+
+.album_cover #text_overlay1{
+    position: relative;
+    bottom:130px;
+    left: 38px;
+    visibility: hidden;
+}
+
+.album_cover #text_overlay2{
+    position: relative;
+    bottom:130px;
+    left: 90px;
+    visibility: hidden;
+    color: white;
+}
+
+.album_cover:hover #text_overlay1, .album_cover:hover #text_overlay2{
+    visibility: visible;
+    transition: ease-in-out .3s;
+}
+
+
+/*
+---------------------------------------------
+#id 
+---------------------------------------------
+*/
+
+#header_style{
+    text-align: center;
+    color: white;
+}
+
+#wrapper{
+    height: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+    background-color: #ebe8e7;
+    flex-grow: 1;
+}
+
+#my_name{
+    text-align: center;
+}
+
+#lightbox{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*
+---------------------------------------------
+media queries 
+---------------------------------------------
+*/
+
+@media screen and (min-width:800px){
+
+    main{
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    footer > div{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+
+    #lightbox{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+}
+
+@media screen and (min-width:950px){
+    
+    #lightbox{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
